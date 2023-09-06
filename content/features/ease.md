@@ -1,0 +1,7 @@
+---
+title: "Ease of Use"
+icon: "icon4.png"
+draft: false
+---
+
+Even if you're new to plant-based eating, our AI-generated recipes are easy to follow, making the transition to a plant-based diet more manageable.
