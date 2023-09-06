@@ -1,0 +1,13 @@
+<!-- layouts/shortcodes/heroSection.html -->
+
+<section class="hero">
+  <div class="left-side">
+    <h1 class="large-title">{{ .Get "leftTitle" }}</h1>
+    <img class="housewife" src="{{ .Get "imageSrc" }}" alt="{{ .Get "imageAlt"
+    }}">
+  </div>
+  <div class="right-side">
+    <h1 class="large-title">{{ .Get "rightTitle" }}</h1>
+    <p class="para">{{ .Get "description" }}</p>
+  </div>
+</section>
