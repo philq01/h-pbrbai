@@ -1,0 +1,260 @@
+/* General styles */
+body {
+  font-family: sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #333;
+}
+
+.section-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between; /* This adds space between the two divs */
+}
+
+.image-container,
+.right-side {
+  flex: 1; /* This makes both divs take up equal space */
+  margin: 0 10px; /* This adds a bit of margin to both sides of each div */
+}
+
+.cta-button {
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  font-size: large;
+  background-color: #4326d4;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  font-size: 2rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+.logo-img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.web-name {
+  margin-left: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  font-size: xx-large;
+}
+/* Hero section */
+.hero {
+  display: flex;
+  justify-content: flex-start; /* Aligns children to the start of the flex container */
+  padding-top: 6rem;
+  gap: 2rem; /* Adds a gap between the children */
+}
+
+.left-side {
+  flex: 1; /* This allows the div to grow and take up the remaining space */
+  max-width: 50%; /* Sets a max width */
+}
+
+.right-side {
+  flex: 1; /* This allows the div to grow and take up the remaining space */
+  max-width: 50%; /* Sets a max width */
+}
+
+.hero img {
+  width: 100%; /* Takes up full width of its container */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.large-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.para {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Content section */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 2rem;
+}
+
+.slideshow {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+  padding-left: 2rem;
+}
+
+.slideshow img {
+  padding-left: 2rem;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+/* Features section */
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.feature {
+  padding: 5px 10px;
+  width: 15%;
+  background-color: rgb(108, 236, 172);
+  text-align: center;
+  border: 1px solid #1a1616;
+  border-radius: 25px;
+  box-shadow: 20px 13px 8px -1px #c0c0c0;
+}
+.para2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.parae {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.feature img {
+  width: 50px;
+  height: auto;
+}
+.featuree {
+  padding: 5px 10px;
+  width: 15%;
+  background-color: rgb(108, 155, 236);
+  text-align: center;
+  border: 1px solid #1a1616;
+  border-radius: 25px;
+  box-shadow: 20px 13px 8px -1px #c0c0c0;
+  color: #fff;
+}
+/* Final Call to Action section */
+.final-cta {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .hero,
+  .content,
+  .final-cta {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-wrap: wrap;
+  }
+
+  .feature {
+    width: 48%;
+    margin-bottom: 1rem;
+  }
+}
+.footer {
+  background-color: aqua;
+}
+.footer p {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+.image-container img {
+  display: none;
+}
+
+.image-container img:first-child {
+  display: block;
+}
+.section5 {
+  display: flex;
+  background-color: #938f8f;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+/* Default style for all sections */
+section {
+  padding: 2rem;
+}
+
+/* Individual section background colors */
+section:nth-child(odd) {
+  background-color: #f4f4f4; /* Light Gray */
+}
+
+section:nth-child(even) {
+  background-color: #e0e0e0; /* Dark Gray */
+}
+
+/* Override for specific sections if needed */
+.header,
+.footer {
+  background-color: inherit; /* Reset to default */
+}
+.video-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9; /* Or any color you prefer */
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 25px;
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.feature-link {
+  display: inline-flex; /* or just flex, to match .feature's display property */
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+.feature-link:hover .feature,
+.feature-link:focus .feature {
+  background-color: #f2f2f2; /* Or any color you prefer for hover/focus */
+}
